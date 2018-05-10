@@ -11,7 +11,7 @@ public class LogSpamController {
 
     private final Logger logger = LoggerFactory.getLogger(LogSpamController.class);
 
-    @RequestMapping("/")
+    @RequestMapping("/spam")
     public String spamLogs(){
         for (int i =0; i < 10000; i++){
             logger.error("MSG : " + i);
